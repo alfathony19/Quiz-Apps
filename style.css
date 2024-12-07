@@ -933,7 +933,7 @@ input::-webkit-inner-spin-button {
 /* Ponsel sangat kecil */
 @media (max-width: 480px) {
   body {
-    font-size: 14px;
+    font-size: 12px;
   }
   .form,
   .info_box,
