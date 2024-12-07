@@ -959,6 +959,7 @@ input::-webkit-inner-spin-button {
     padding: 5px;
   }
   .copyright {
+    margin-top: 1rem;
     font-size: 10px;
     flex-direction: column; /* Teks akan diatur vertikal */
     padding: 5px;
