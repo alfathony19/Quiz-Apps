@@ -803,6 +803,7 @@ input::-webkit-inner-spin-button {
   }
 
   .form,
+  .info_box,
   .result_box,
   .quiz_container {
     width: 95%;
@@ -848,6 +849,7 @@ input::-webkit-inner-spin-button {
   }
 
   .form,
+  .info_box,
   .result_box,
   .quiz_container {
     width: 90%;
@@ -892,6 +894,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 5rem;
   }
   .form,
+  .info_box,
   .result_box,
   .quiz_container {
     width: 95%;
@@ -933,6 +936,7 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
   }
   .form,
+  .info_box,
   .result_box,
   .quiz_container {
     width: 100%;
