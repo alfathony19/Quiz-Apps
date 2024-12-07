@@ -115,22 +115,20 @@
       </main>
 
       <!-- button pertanyaan selanjutnya -->
-      <footer>
-        <div class="footer_container">
-          <div class="qustion_Count">
-            <span id="qustionNo">1</span>
-            <p>Out of</p>
-            <span>10</span>
-            <p>questions</p>
-          </div>
-          <div class="next_Btn">
-            <button onclick="renderQuestions()" id="prev-question">
-              Previous
-            </button>
-            <button onclick="renderQuestions()" id="next-question">Next</button>
-          </div>
+      <div class="footer_container">
+        <div class="qustion_Count">
+          <span id="qustionNo">1</span>
+          <p>Out of</p>
+          <span>10</span>
+          <p>questions</p>
         </div>
-      </footer>
+        <div class="next_Btn">
+          <button onclick="renderQuestions()" id="prev-question">
+            Previous
+          </button>
+          <button onclick="renderQuestions()" id="next-question">Next</button>
+        </div>
+      </div>
     </div>
 
     <!-- result box -->
@@ -144,13 +142,14 @@
         <button class="quit" onclick="quit()">Log Out</button>
       </div>
     </div>
-
-    <div class="copyright">
-      <p>
-        &copy; 2024 QuizApps. | <a href="">Aldo Abdillah Fathony</a>| All rights
-        reserved.
-      </p>
-    </div>
+    <footer>
+      <div class="copyright">
+        <p>
+          &copy; 2024 QuizApps. | <a href="">Aldo Abdillah Fathony</a>| All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>

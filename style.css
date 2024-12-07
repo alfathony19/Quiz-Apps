@@ -758,8 +758,17 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 /* Gaya Responsif */
-.copyright {
+footer {
   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--darkColor);
+  color: var(--whiteColor);
+  padding: 10px;
+}
+.copyright {
+  position: absolute;
   bottom: 0%;
   left: 50%;
   transform: translateX(-50%);
