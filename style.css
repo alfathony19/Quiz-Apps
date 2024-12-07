@@ -940,7 +940,7 @@ input::-webkit-inner-spin-button {
   .result_box,
   .quiz_container {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     margin-top: 5rem;
     padding: 10px;
   }
