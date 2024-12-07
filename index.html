@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Apps</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Quiz <span>Apps</span></h1>
+    </div>
+    <!-- Pemberitahuan Untuk Pengguna -->
+    <div id="welcome-message" class="welcome-message" style="display: none">
+      <h1>Welcome to QuizApps</h1>
+      <p>
+        please register your account. <br />
+        make yourself smile
+      </p>
+    </div>
+    <!-- login form -->
+    <div class="login_form">
+      <div class="form">
+        <div class="title">Login</div>
+        <span class="inputs">
+          <span class="inputf">
+            <input
+              type="email"
+              class="input"
+              id="uEmail"
+              placeholder="Enter your email"
+            />
+            <span class="label">Email</span>
+          </span>
+          <span class="inputf">
+            <input
+              type="password"
+              class="input"
+              id="uPass"
+              placeholder="Enter your password"
+            />
+            <span class="label">Password</span>
+          </span>
+        </span>
+        <div class="hideBtn">
+          <button type="button" class="btn" onclick="loginForm()">Login</button>
+          <div class="text">
+            Don't have an account? Create an account
+            <a href="sign-up.html">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info box quiz -->
+    <div class="info_box">
+      <div class="info-title"><span>Rules in this quiz</span></div>
+      <div class="info-list">
+        <div class="info">
+          <span>1.</span> You only have 30 seconds for each question.
+        </div>
+        <div class="info">
+          <span>2.</span> You cannot select any options after the time runs out.
+        </div>
+        <div class="info">
+          <span>3.</span> Once the quiz starts, you cannot minimize the screen
+          or open another page.
+        </div>
+        <div class="info">
+          <span>4.</span> If you violate <span>point 3</span>, it will be
+          considered a violation of the rules (disqualification).
+        </div>
+        <div class="info">
+          <span>5.</span> If two violations are counted, you will be ejected.
+        </div>
+        <div class="info">
+          <span>6.</span> You cannot exit the quiz while you are playing.
+        </div>
+        <div class="info">
+          <span>7.</span> You will get points based on the correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit" onclick="quit()">Exit Quiz</button>
+        <button class="restart" onclick="enterQuiz()">Next</button>
+      </div>
+    </div>
+
+    <!-- start quiz button -->
+    <div class="startBtn">
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Tampilkan quiz soal -->
+    <div class="quiz_container">
+      <!-- header quiz -->
+      <header>
+        <div class="quiz_title">
+          <p>Quiz</p>
+        </div>
+        <div class="count_down">
+          <p>Remaining Time</p>
+          <p id="timer">03:00</p>
+        </div>
+      </header>
+
+      <!-- main quiz content -->
+      <main id="quizHidden">
+        <div id="qustionsContainer"></div>
+      </main>
+
+      <!-- button pertanyaan selanjutnya -->
+      <footer>
+        <div class="footer_container">
+          <div class="qustion_Count">
+            <span id="qustionNo">1</span>
+            <p>Out of</p>
+            <span>10</span>
+            <p>questions</p>
+          </div>
+          <div class="next_Btn">
+            <button onclick="renderQuestions()" id="prev-question">
+              Previous
+            </button>
+            <button onclick="renderQuestions()" id="next-question">Next</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- result box -->
+    <div class="result_box">
+      <div class="complete_text">You have successfully completed the quiz</div>
+      <div class="circular-progress">
+        <span class="progress-value">0%</span>
+      </div>
+      <div class="score_text"></div>
+      <div class="buttons">
+        <button class="quit" onclick="quit()">Log Out</button>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>
+        &copy; 2024 QuizApps. | <a href="">Aldo Abdillah Fathony</a>| All rights
+        reserved.
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
