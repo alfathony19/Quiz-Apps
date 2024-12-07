@@ -941,21 +941,21 @@ input::-webkit-inner-spin-button {
   .quiz_container {
     width: 80%;
     max-width: 280px;
-    margin-top: 5rem;
+    margin: 5rem 2rem;
     padding: 10px;
   }
 
   #qustions {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .options {
-    font-size: 12px;
+    font-size: 11px;
     padding: 6px;
   }
 
   .next_Btn button {
-    font-size: 12px;
+    font-size: 11px;
     padding: 5px;
   }
   .copyright {
