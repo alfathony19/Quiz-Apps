@@ -20,7 +20,7 @@ body {
   background-size: cover;
   background-attachment: fixed; /* Latar belakang tetap */
   color: var(--whiteColor);
-  margin: 0; /* Hilangkan margin default */
+  margin-bottom: 100px; /* Hilangkan margin default */
   scroll-behavior: smooth;
   height: 100vh; /* Pastikan selalu penuh layar */
   width: 100vw; /* Pastikan penuh lebar layar */
